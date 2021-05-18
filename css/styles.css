@@ -1,3 +1,21 @@
+.rot {
+  --primary-tex-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --buton-text-color: #ffffff;
+  --text-color-footer: rgba(238, 57, 57, 0.6);
+}
+/* logo #000000 */
+/* bacgraund-2 #2F303A */
+body {
+  background-color: #ffffff;
+  color: var(--primary-tex-color);
+  font-family: Roboto;
+}
+ul {
+  list-style: none;
+}
+/* header */
 .logo {
   position: absolute;
   width: 145px;
@@ -13,12 +31,27 @@
 }
 .logo-first {
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
-.nav-link {
-  position: absolute;
-  width: 294px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
+.site-nav a {
+  color: #212121;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+/* hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+}
+/* main */
+.section-title {
+  color: var(--title-text-color);
+}
+/* main  Наши ценности */
+.feature-list .title {
+  color: var(--title-text-color);
 }
