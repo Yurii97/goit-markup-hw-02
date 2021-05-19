@@ -1,4 +1,4 @@
-.rot {
+:root {
   --primary-tex-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -7,17 +7,26 @@
 }
 /* logo #000000 */
 /* bacgraund-2 #2F303A */
+/* * universav selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #ffffff;
   color: var(--primary-tex-color);
   font-family: Roboto;
+  /* experement */
+  width: 1600px;
+  margin: 0 auto;
 }
 ul {
   list-style: none;
 }
 /* header */
-.logo {
-  position: absolute;
+/* logo */
+.nav-logo {
   width: 145px;
   height: 31px;
   left: 215px;
@@ -29,15 +38,25 @@ ul {
   line-height: 31px;
   color: #000000;
 }
-.logo-first {
+.first-nav-logo {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .site-nav a {
-  color: #212121;
+  color: var(--title-text-color);
 }
 .site-nav a:hover,
 .site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contact-nav a {
+  color: var(--primary-tex-color);
+}
+.contact-nav a:hover,
+.contact-nav a:focus {
   color: var(--accent-color);
 }
 /* hero */
@@ -47,6 +66,16 @@ ul {
 .hero-title {
   color: #ffffff;
 }
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--buton-text-color);
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 4px;
+}
 /* main */
 .section-title {
   color: var(--title-text-color);
@@ -54,4 +83,69 @@ ul {
 /* main  Наши ценности */
 .feature-list .title {
   color: var(--title-text-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+/* Наша команда */
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* footer */
+.adress-footer a {
+  color: var(--primary-tex-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.adress-footer p {
+  color: var(--buton-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+}
+.first-footer-logo {
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+/* portfolio */
+/* main */
+.price-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.price-button:hover,
+.price-button:focus {
+  background-color: var(--accent-color);
+  color: var(--buton-text-color);
+  cursor: pointer;
 }
