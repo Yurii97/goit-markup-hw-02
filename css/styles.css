@@ -2,45 +2,52 @@
   --primary-tex-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --buton-text-color: #ffffff;
+  --button-text-color: #ffffff;
   --text-color-footer: rgba(238, 57, 57, 0.6);
+  --dark-blac: #000000;
+  --background-another: #2f303a;
+  --button-color: #f5f4fa;
 }
-/* logo #000000 */
-/* bacgraund-2 #2F303A */
-/* * universav selector */
+/* * universal general selector */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--button-text-color);
   color: var(--primary-tex-color);
   font-family: Roboto;
-  /* experement */
-  width: 1600px;
-  margin: 0 auto;
+  font-style: normal;
 }
 ul {
   list-style: none;
 }
-/* header */
+a {
+  text-decoration: none;
+}
+/* HEADER */
 /* logo */
 .nav-logo {
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
-  color: #000000;
+  line-height: 1.192;
+  color: var(--dark-blac);
+  letter-spacing: 0.03em;
 }
 .first-nav-logo {
-  letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+/* nav */
+/* nav title */
+.site-nav a,
+.contact-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
 }
 .site-nav a {
   color: var(--title-text-color);
@@ -61,24 +68,35 @@ ul {
 }
 /* hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-another);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--button-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-button {
   background-color: var(--accent-color);
-  color: var(--buton-text-color);
-  width: 200px;
-  height: 50px;
+  color: var(--button-text-color);
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   border-radius: 4px;
+  letter-spacing: 0.06em;
+  border-width: 0px;
 }
-/* main */
+/*MAIN */
 .section-title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
 }
 /* main  Наши ценности */
 .feature-list .title {
@@ -86,33 +104,50 @@ ul {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+}
+.feature-list .description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 /* Наша команда */
 .team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
 }
-
-/* footer */
+.team-list .position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+/* FOOTER */
+/* adress */
 .adress-footer a {
   color: var(--primary-tex-color);
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 
 .adress-footer p {
-  color: var(--buton-text-color);
+  color: var(--button-text-color);
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-another);
 }
+/* footer logo */
 .footer-logo {
   width: 145px;
   height: 31px;
@@ -122,30 +157,32 @@ ul {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
-  color: #ffffff;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
 }
 .first-footer-logo {
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
-/* portfolio */
-/* main */
+/* PORTFOLIO */
+/* MAIN */
+/* section */
 .price-button {
   font-family: Roboto;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--button-color);
   border-radius: 4px;
+  border-width: 0px;
 }
 .price-button:hover,
 .price-button:focus {
   background-color: var(--accent-color);
-  color: var(--buton-text-color);
+  color: var(--button-text-color);
   cursor: pointer;
 }
